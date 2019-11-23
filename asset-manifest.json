@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/color-palette-react-redux/static/css/main.b100e6da.chunk.css",
-    "main.js": "/color-palette-react-redux/static/js/main.a95ee41b.chunk.js",
-    "main.js.map": "/color-palette-react-redux/static/js/main.a95ee41b.chunk.js.map",
+    "main.js": "/color-palette-react-redux/static/js/main.ec6a5cf5.chunk.js",
+    "main.js.map": "/color-palette-react-redux/static/js/main.ec6a5cf5.chunk.js.map",
     "runtime-main.js": "/color-palette-react-redux/static/js/runtime-main.f29bcd38.js",
     "runtime-main.js.map": "/color-palette-react-redux/static/js/runtime-main.f29bcd38.js.map",
     "static/js/2.a19e4495.chunk.js": "/color-palette-react-redux/static/js/2.a19e4495.chunk.js",
     "static/js/2.a19e4495.chunk.js.map": "/color-palette-react-redux/static/js/2.a19e4495.chunk.js.map",
     "index.html": "/color-palette-react-redux/index.html",
-    "precache-manifest.d10f6aa9c186f711bad94b8ec85552b0.js": "/color-palette-react-redux/precache-manifest.d10f6aa9c186f711bad94b8ec85552b0.js",
+    "precache-manifest.410f1633310a7767ef7ea05a3c07c31b.js": "/color-palette-react-redux/precache-manifest.410f1633310a7767ef7ea05a3c07c31b.js",
     "service-worker.js": "/color-palette-react-redux/service-worker.js",
     "static/css/main.b100e6da.chunk.css.map": "/color-palette-react-redux/static/css/main.b100e6da.chunk.css.map"
   },
@@ -16,6 +16,6 @@
     "static/js/runtime-main.f29bcd38.js",
     "static/js/2.a19e4495.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.a95ee41b.chunk.js"
+    "static/js/main.ec6a5cf5.chunk.js"
   ]
 }
