@@ -41,6 +41,7 @@ const boxesReducer = (state = initialState, action) => {
         }
         return box;
       })
+      return newBoxes
   }
   return newState
 }
