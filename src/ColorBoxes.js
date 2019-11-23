@@ -1,22 +1,56 @@
 import React from 'react';
-import './App.css';
+// import './App.css';
+import { connect } from 'react-redux'
 
 import ColorBox from './ColorBox';
-import myStore from './store';
+// import myStore from './store';
 
 function ColorBoxes(props) {
   return (
       <div style={{ textAlign: 'center' }}>
-        <button onClick={() => myStore.dispatch({type: 'RANDOMIZE'})}>Randomize!</button>
-        <button onClick={() => myStore.dispatch({type: 'ADD_BOX'})}>Add box</button>
-        <button onClick={() => myStore.dispatch({type: 'REMOVE_BOX'})}>Remove box</button>
+        <button onClick={props.randomize}>Randomize!</button>
+        <button onClick={props.addBox}>Add box</button>
+        <button onClick={props.removeBox}>Remove box</button>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
           {props.boxes.map((box, idx) => (
-            <ColorBox {...box} key={idx} toggleLock={() => myStore.dispatch({type: 'TOGGLE_BOX', boxIndex: idx})}/>
+            <ColorBox {...box} key={idx} toggleLock={() => props.toggleLock(idx)}/>
           ))}
         </div>
       </div>
   )
 }
 
-export default ColorBoxes;
+const ConnectedColorBoxes = connect(
+  (state) => {
+    return {
+      boxes: state.boxes
+    }
+  },
+  (dispatch) => {
+    return {
+      randomize: () => {
+        return dispatch({
+          type: 'RANDOMIZE'
+        })
+      },
+      addBox: () => {
+        return dispatch({
+          type: 'ADD_BOX'
+        })
+      },
+      removeBox: () => {
+        return dispatch({
+          type: 'REMOVE_BOX'
+        })
+      },
+      toggleLock: (index) => {
+        return dispatch({
+          type: 'TOGGLE_LOCK',
+          boxIndex: index
+        })
+      }
+    }
+  }
+)(ColorBoxes)
+
+export default ConnectedColorBoxes;

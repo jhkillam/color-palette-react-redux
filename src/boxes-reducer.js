@@ -30,7 +30,7 @@ const boxesReducer = (state = initialState, action) => {
       const newBoxes = [...newState]
       newBoxes.pop()
       return newBoxes
-  } else if (action.type === 'TOGGLE_BOX') {
+  } else if (action.type === 'TOGGLE_LOCK') {
       const newBoxes = [...newState]
       newBoxes[action.boxIndex].isLocked = !newBoxes[action.boxIndex].isLocked
   } else if (action.type === 'RANDOMIZE') {

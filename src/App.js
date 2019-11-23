@@ -7,8 +7,8 @@ import Profile from './Profile'
 function App(props) {
   return (
     <div style={{ textAlign: 'center' }}>
-      <Profile profile={props.profile}/>
-      <ColorBoxes boxes={props.boxes}/>
+      <Profile />
+      <ColorBoxes />
     </div>
   )
 }
